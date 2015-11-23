@@ -11,6 +11,8 @@
         <h1>Customers</h1>
         
         <a href="read"> View All Customers </a>
+        <br><br>
+        <a href="search.jsp">Search Customers</a>
         
     </body>
 </html>
