@@ -17,7 +17,7 @@
                 <h1>Search Customers</h1>
 
                 
-                    <form class="box" name="searchForm" action="search" method="get">
+                    <form class="box" name="searchForm" action="search" method="post">
                         <input type="text" name="searchVal" value="">
                         <br>
                         <input type="submit" name="submit" value="Search">

@@ -4,6 +4,11 @@ body{
       border-color: white;
 }
 
+p{
+    color:red;
+    margin:auto;
+}
+
 
 .wrap {width:90%; margin:0 auto; border:1px solid black; margin-top:25px;}
 
@@ -22,13 +27,14 @@ body{
 
 table{
     background-color:white;
-    width: 700px;
+    width: auto;
     padding: 5px;
 }
 
 th{
     background-color: #FFFF99;
     color:#696969;
+    width:auto;
    
 }
 
@@ -53,6 +59,8 @@ table, td, th {
     
  
 }
+
+
 
 label{
    

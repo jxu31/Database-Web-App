@@ -66,7 +66,7 @@ public class ReadQuery {
         
         String table ="";
         
-        table += "<table border=1>";
+        table += "<table>";
         table += "<tr>";
                 table += "<th>";
                 table +="custID";

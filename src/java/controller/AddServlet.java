@@ -85,7 +85,9 @@ public class AddServlet extends HttpServlet {
         String emailAddr =request.getParameter("emailAddr");
         int age = Integer.parseInt(request.getParameter("age"));
         
+     
         Customers customer = new Customers();
+        
         customer.setFirstName(firstname);
         customer.setLastName(lastname);
         customer.setAddr1(addr1);
@@ -108,6 +110,12 @@ public class AddServlet extends HttpServlet {
         
     }
 
+
+    
+    
+  
+    
+    
     /**
      * Returns a short description of the servlet.
      *
