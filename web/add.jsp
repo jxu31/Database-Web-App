@@ -7,12 +7,7 @@
         <title>Add A New Customer</title>
         <link rel="stylesheet" type="text/css" href="format.css"/>
 
-
-
-
         <script type="text/javascript">
-
-
 
             var letterOnly = /^[A-Za-z]+$/;
             var letters = /^[0-9a-zA-Z]+$/;
@@ -125,16 +120,7 @@
 
         </script>
 
-
-
-
-
-
     </head>
-
-
-
-
 
     <body>
         <div class="wrap">
@@ -235,7 +221,7 @@
                     <input type="number" pattern="[0-9]" id="input6" name="zip" value="" placeholder="52246" required>
                     <br>
                     <label>*EmailAddr </label>
-                    <input type="email"  name="emailAddr" value="" placeholder="name@mail.com" required>
+                    <input type="email"  name="emailAddr" value="" placeholder="nobody@mail.com" required>
                     <br>
                     <label>*Age </label>
                     <input type="number" pattern="[0-9]" min="0" max="200" name="age" value="" placeholder="25" required />

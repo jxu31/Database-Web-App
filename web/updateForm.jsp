@@ -13,6 +13,120 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Update A Customer</title>
         <link rel="stylesheet" type="text/css" href="format.css"/>
+
+        <script type="text/javascript">
+
+            var letterOnly = /^[A-Za-z]+$/;
+            var letters = /^[0-9a-zA-Z]+$/;
+
+            function test1(input1) {
+
+                var data1 = document.getElementById(input1).value;
+
+                if (letterOnly.test(data1)) {
+
+                    return true;
+                }
+                else {
+                    document.getElementById(input1).value = '';
+                    alert("Please enter valid First Name (Only letter)");
+                    document.getElementById(input1).focus();
+                    return false;
+                }
+
+
+            }
+
+            function test2(input2) {
+
+                var data2 = document.getElementById(input2).value;
+
+                if (letterOnly.test(data2)) {
+
+                    return true;
+                }
+                else {
+                    document.getElementById(input2).value = '';
+                    alert("Please enter valid Last Name (Only letter)");
+                    document.getElementById(input2).focus();
+                    return false;
+                }
+
+
+            }
+
+            function test3(input3) {
+
+
+                var data3 = document.getElementById(input3).value;
+
+                if (letters.test(data3)) {
+
+                    return true;
+                }
+                else {
+                    document.getElementById(input3).value = '';
+                    alert("Please enter valid Address (Only letter and Number)");
+                    document.getElementById(input3).focus();
+                    return false;
+                }
+
+
+            }
+
+            function test4(input4) {
+                var data4 = document.getElementById(input4).value;
+
+                if (letters.test(data4)) {
+
+                    return true;
+                }
+                else {
+                    document.getElementById(input4).value = '';
+                    alert("Please enter valid Address (Only letter and Number)");
+                    document.getElementById(input4).focus();
+                    return false;
+                }
+
+
+            }
+
+            function test5(input5) {
+                var data5 = document.getElementById(input5).value;
+
+                if (letterOnly.test(data5)) {
+
+                    return true;
+                }
+                else {
+                    document.getElementById(input5).value = '';
+                    alert("Please enter valid City Name ( Only letter)");
+                    document.getElementById(input5).focus();
+                    return false;
+                }
+
+            }
+
+            function test6(input6) {
+
+                var data6 = document.getElementById(input6).value;
+
+                if (data6.length === 5) {
+
+                    return true;
+                } else {
+                    document.getElementById(input6).value = '';
+                    alert("Please enter valid zip code");
+                    document.getElementById(input6).focus();
+                    return false;
+                }
+            }
+
+
+
+
+        </script>
+
     </head>
     <body>
 
@@ -32,7 +146,9 @@
                     </form>
                 </div>
                 <h1>Update A Customer Record</h1>
-                
+
+                <p> * (Required Field)</p>
+
                 <form class="box" name="updateForm" action="updateCustomer" method="post">
 
                     <table class="update">
@@ -42,24 +158,23 @@
                         </tr>
                         <tr>
                             <td class="right">* First Name:</td>
-                            <td><input type="text" name="firstname" value="<%= customer.getFirstName()%>" required/></td>
-                            <td>(eg: Ann)</td>
+                            <td><input type="text" id="input1" name="firstname" value="<%= customer.getFirstName()%>"  placeholder="Anna" required/></td>
                         </tr>
                         <tr>
                             <td class="right">* Last Name:</td>
-                            <td><input type="text" name="lastname" value="<%= customer.getLastName()%>" required/></td>
+                            <td><input type="text" id="input2" name="lastname" value="<%= customer.getLastName()%>" placeholder="Brown" required/></td>
                         </tr>
                         <tr>
                             <td class="right">* Addr1:</td>
-                            <td><input type="text" name="addr1" value="<%= customer.getAddr1()%>" required/></td>
+                            <td><input type="text" id="input3" name="addr1" value="<%= customer.getAddr1()%>" placeholder="7-10 Washington Dr." required/></td>
                         </tr>
                         <tr>
                             <td class="right">  Addr2:</td>
-                            <td><input type="text" name="addr2" value="<%= customer.getAddr2()%>" /></td>
+                            <td><input type="text" id="input4" name="addr2" value="<%= customer.getAddr2()%>" placeholder="2nd Ave" /></td>
                         </tr>
                         <tr>
                             <td class="right">* City:</td>
-                            <td><input type="text" name="city" value="<%= customer.getCity()%>" required/></td>
+                            <td><input type="text" id="input5" name="city" value="<%= customer.getCity()%>" placeholder="Seattle" required/></td>
                         </tr>
                         <tr>
                             <td class="right">* State:</td>
@@ -126,19 +241,25 @@
 
                         <tr>
                             <td class="right">* Zip:</td>
-                            <td><input type="text" name="zip" value="<%= customer.getZip()%>" required/></td>
+                            <td><input type="text" id="input6" name="zip" value="<%= customer.getZip()%>" placeholder="52246" required/></td>
                         </tr>
                         <tr>
                             <td class="right">* EmailAddr:</td>
-                            <td><input type="text" name="emailAddr" value="<%= customer.getEmailAddr()%>" required/></td>
+                            <td><input type="text" name="emailAddr" value="<%= customer.getEmailAddr()%>" placeholder="nobody@mail.com" required/></td>
                         </tr>
                         <tr>
                             <td class="right">* Age</td>
-                            <td><input type="text" name="age" value="<%= customer.getAge()%>" required/></td>
+                            <td><input type="text" name="age" value="<%= customer.getAge()%>" placeholder="25" required/></td>
                         </tr>
                         <br>
                     </table>
-                    <input type="submit" name="submit" value="Submit"/>
+                    <input type="submit" name="submit" value="Submit" onclick= "test1('input1');
+                            test2('input2');
+                            test1('input3');
+                            test1('input4');
+                            test5('input5');
+                            test6('input6');" />
+
                     <input type="reset" name="clear" value="Clear" />
 
 

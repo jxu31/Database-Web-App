@@ -13,20 +13,8 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/web/add.jsp</file>
-            <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/src/java/dbHelpers/ReadQuery.java</file>
-            <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/src/java/dbHelpers/UpdateQuery.java</file>
-            <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/src/java/model/Customers.java</file>
-            <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/src/java/controller/Read.java</file>
-            <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/web/format.css</file>
-            <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/web/index.jsp</file>
-            <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/src/java/controller/SearchServlet.java</file>
             <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/web/updateForm.jsp</file>
-            <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/src/java/dbHelpers/ReadRecord.java</file>
-            <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/src/java/dbHelpers/SearchQuery.java</file>
-            <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/src/java/controller/UpdateFormServlet.java</file>
-            <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/src/java/controller/UpdateServlet.java</file>
             <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/web/search.jsp</file>
-            <file>file:/C:/Users/Jiawen/Documents/NetBeansProjects/customersApp/web/read.jsp</file>
         </group>
     </open-files>
 </project-private>
