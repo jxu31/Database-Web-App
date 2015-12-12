@@ -135,9 +135,7 @@
             <%@ include file="includes/header.jsp" %>
 
             <%@ include file="includes/menu.jsp" %>
-
-            <div class="main">
-                <div id="searchbox">
+  <div class="searchbox">
                     <form class="box" name="searchForm" action="search" method="post">
                         <input type="text" name="searchVal" value="">
                         <br>
@@ -145,6 +143,8 @@
 
                     </form>
                 </div>
+            <div class="main">
+                
                 <h1>Update A Customer Record</h1>
 
                 <p> * (Required Field)</p>

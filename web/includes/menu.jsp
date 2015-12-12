@@ -6,4 +6,5 @@
         <li><a href="search.jsp">Search Records</a></li>
       
     </ul>
+  
 </div>

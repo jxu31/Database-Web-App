@@ -14,8 +14,7 @@
             <%@ include file="includes/header.jsp" %>
             <%@ include file="includes/menu.jsp" %>
 
-            <div class="main">
-                <div class="searchbox">
+              <div class="searchbox">
                     <form class="box" name="searchForm" action="search" method="post">
                         <input type="text" name="searchVal" value="">
                         <br>
@@ -23,6 +22,8 @@
 
                     </form>
                 </div>
+            <div class="main">
+                
                 <h1>Customers</h1>
 
                 <p id="dummy">
