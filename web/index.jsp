@@ -15,7 +15,7 @@
             <%@ include file="includes/menu.jsp" %>
 
             <div class="main">
-                 <div class="searchbox">
+                <div class="searchbox">
                     <form class="box" name="searchForm" action="search" method="post">
                         <input type="text" name="searchVal" value="">
                         <br>
@@ -24,6 +24,11 @@
                     </form>
                 </div>
                 <h1>Customers</h1>
+
+                <p id="dummy">
+                    Welcome to Exam III Part 2
+                </p>
+                <br>
 
                 <a href="read"> View All Customers </a>
                 <br><br>

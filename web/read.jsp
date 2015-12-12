@@ -34,7 +34,7 @@
 
                 <a href ="add"> Add A New Customer </a>
                 <br><br>
-                <a href="search.jsp"> Search Courses</a>
+                <a href="search.jsp"> Search Customers</a>
 
             </div>
 
