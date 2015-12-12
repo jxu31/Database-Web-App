@@ -48,41 +48,7 @@
 
             }
 
-            function test3(input3) {
 
-
-                var data3 = document.getElementById(input3).value;
-
-                if (letters.test(data3)) {
-
-                    return true;
-                }
-                else {
-                    document.getElementById(input3).value = '';
-                    alert("Please enter valid Address (Only letter and Number)");
-                    document.getElementById(input3).focus();
-                    return false;
-                }
-
-
-            }
-
-            function test4(input4) {
-                var data4 = document.getElementById(input4).value;
-
-                if (letters.test(data4)) {
-
-                    return true;
-                }
-                else {
-                    document.getElementById(input4).value = '';
-                    alert("Please enter valid Address (Only letter and Number)");
-                    document.getElementById(input4).focus();
-                    return false;
-                }
-
-
-            }
 
             function test5(input5) {
                 var data5 = document.getElementById(input5).value;
@@ -128,18 +94,11 @@
             <%@ include file="includes/header.jsp" %>
 
             <%@ include file="includes/menu.jsp" %>
-            
-              <div class="searchbox">
-                    <form class="box" name="searchForm" action="search" method="post">
-                        <input type="text" name="searchVal" value="">
-                        <br>
-                        <input type="submit" name="submit" value="Search">
 
-                    </form>
-                </div>
+
 
             <div class="main">
-                
+
 
                 <h1>Add A New Customer</h1>
 
@@ -232,8 +191,6 @@
 
                     <input type="submit" name="submit" value="Submit" onclick= "test1('input1');
                             test2('input2');
-                            test1('input3');
-                            test1('input4');
                             test5('input5');
                             test6('input6');" />
                     <input type="reset" name="clear" value="Clear" />
